@@ -1,0 +1,15 @@
+.flex-container{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr );
+    grid-gap: 5rem;
+    padding: 3rem;
+  
+   
+    
+    
+}
+
+.about__text{
+    display:flex;
+    flex-direction: column;
+}

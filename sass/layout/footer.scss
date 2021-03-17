@@ -1,0 +1,82 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  background-color: $color-grey-dark-3;
+  padding: 8rem;
+  font-size: 1.4rem;
+
+  @include respond($tablet-landscape) {
+    padding: 4rem;
+  }
+
+  &__logo-box {
+    align-self: center;
+  }
+
+  &__logo {
+    width: 15rem;
+    height: auto;
+    padding: 1rem;
+    // @include respond($tablet-landscape) {
+    //   width: 10rem;
+    // }
+  }
+
+  &__navigation {
+    border-top: 1px solid $color-grey-dark;
+
+    display: inline-block;
+  }
+
+  &__list-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media screen and(max-width:900px) {
+      flex-direction: column;
+    }
+  }
+
+  &__list {
+    color: #eee;
+    list-style: none;
+    display: flex;
+    margin-top: 3rem;
+  }
+
+  &__item {
+    padding: 0 1.5rem;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      display: inline-block;
+      color: #eee;
+      background-color: $color-grey-dark-3;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: all 0.2s;
+      padding: 0 0.5rem;
+    }
+    &:hover,
+    :active {
+      display: inline-block;
+      color: $color-primary;
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+      transform: rotate(5deg) scale(1.5);
+      cursor: pointer;
+    }
+  }
+
+  &__copyright {
+    padding: 0 1.5rem;
+    align-self: flex-end;
+
+    @include respond($tablet-landscape) {
+      margin-top: 3rem;
+      align-self: center;
+    }
+  }
+}

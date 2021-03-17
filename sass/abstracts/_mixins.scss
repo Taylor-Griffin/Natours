@@ -1,0 +1,12 @@
+// Media query manager
+
+$phone: 600px;
+$tablet-portrait: 900px;
+$tablet-landscape: 1200px;
+$big-desktop: 1800px;
+
+@mixin respond($breakpoint) {
+  @media only screen and (max-width: $breakpoint/16px *1em) {
+    @content;
+  }
+}
