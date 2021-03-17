@@ -121,10 +121,10 @@
   }
 
   &__btn {
-    margin-top: 1rem;
+    margin-top: 2rem;
 
     @include respond($tablet-portrait) {
-      margin-top: 2rem;
+      margin-top: 3rem;
     }
 
     @include respond($phone) {
