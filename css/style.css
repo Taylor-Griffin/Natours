@@ -344,7 +344,7 @@ body {
   border-bottom: 1px solid #7ed56f;
   padding: 0.5rem 0.5rem 0.5rem 1rem;
   transition: all 0.2s;
-  width: 12rem;
+  width: 15rem;
   margin-top: 1rem;
 }
 .btn-text:hover {
@@ -604,9 +604,9 @@ body {
 }
 @media only screen and (max-width: 37.5em) {
   .feature-box {
-    display: grid;
-    grid-template-columns: repeat 100px 1fr 1fr;
-    text-align: end;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     width: 90%;
     padding: 2rem;
     margin: 0 auto 2.5rem auto;
@@ -731,7 +731,7 @@ body {
 }
 @media only screen and (max-width: 37.5em) {
   .form__input {
-    width: 75%;
+    width: 100%;
     padding: 0.5rem 1rem;
   }
 }

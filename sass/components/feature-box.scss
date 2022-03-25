@@ -12,9 +12,10 @@
   transition: transform 0.3s;
 
   @include respond($phone) {
-    display: grid;
-    grid-template-columns: repeat (100px 1fr 1fr);
-    text-align: end;
+    display: flex;
+    flex-direction: column;
+    // grid-template-columns: repeat (100px 1fr 1fr);
+    text-align: center;
 
     width: 90%;
 
